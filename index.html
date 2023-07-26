@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preload stylesheet" href="/index.css" as="style" />
+  </head>
+  <body>
+    <div class="demo-page">
+      <div class="photo-control">
+        <div class="upload-box">
+          <label class="upload-gif-label" for="uploader-photo-gif">
+            上传Gif
+            <input type="file" id="uploader-photo-gif" accept=".gif" /><br />
+          </label>
+          <div class="upload-name upload-photo-name"></div>
+
+          <label class="upload-image-label" for="uploader-image">
+            上传贴图
+            <input type="file" id="uploader-image" accept=".png,.jpg,.jpeg" /><br />
+          </label>
+          <div class="upload-name upload-image-name"></div>
+        </div>
+
+        <button id="demo-merge">开始合成</button>
+      </div>
+
+      <div class="canvas-box">
+        <canvas id="canvas"></canvas>
+      </div>
+
+      <div class="save-control">
+        <div class="merge-result-list"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.demo-page {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #dce2f1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.photo-control {
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.upload-box {
+  box-sizing: border-box;
+  padding: 5px;
+  flex: 1;
+}
+.upload-box > label {
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px dashed #aaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.upload-box > label > input {
+  display: none;
+}
+
+.upload-box > label:not(:first-child) {
+  margin-top: 16px;
+}
+
+.upload-name {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.merge-result-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.merge-result-list.active {
+  padding: 16px;
+}
+
+.each-merge-result {
+  padding: 5px 16px;
+  border: 1px dashed #aaa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.each-merge-result > label:not(:first-child) {
+  margin-top: 16px;
+}
+
+.each-merge-result > span:not(:first-child) {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.canvas-box {
+  flex: 1;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas {
+  height: 100%;
+}
