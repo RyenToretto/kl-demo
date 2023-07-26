@@ -1,0 +1,9 @@
+.history
+.husky
+.vscode
+coverage/*
+/dist/*
+/public/*
+public/*
+node_modules
+vite.config.ts

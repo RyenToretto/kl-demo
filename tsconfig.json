@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "strictFunctionTypes": false,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "allowJs": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "lib": ["dom", "esnext", "scripthost"],
+    "types": ["vite/client", "node"],
+    "typeRoots": ["./node_modules/@types/", "./types"],
+    "noImplicitAny": false,
+    "paths": {
+      "@/*": ["src/*"],
+      "/#/*": ["types/*"]
+    },
+    "rootDir": "./src",
+    "useDefineForClassFields": true,
+    "noEmit": true,
+    "noImplicitReturns": true
+  },
+  "include": ["src"],
+  "exclude": ["**/*.test.ts", "node_modules", "test/**", ".history/**"]
+}
